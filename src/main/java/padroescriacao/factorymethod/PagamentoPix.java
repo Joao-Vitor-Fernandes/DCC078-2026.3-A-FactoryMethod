@@ -1,6 +1,7 @@
 package padroescriacao.factorymethod;
 
 public class PagamentoPix implements IPagamento {
+
     public String autorizar() {
         return "Pagamento via Pix autorizado";
     }
