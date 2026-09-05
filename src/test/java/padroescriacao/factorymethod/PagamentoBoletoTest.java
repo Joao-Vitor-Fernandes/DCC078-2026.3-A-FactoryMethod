@@ -9,12 +9,12 @@ class PagamentoBoletoTest {
     @Test
     void deveAutorizarBoleto() {
         IPagamento pagamento = PagamentoFactory.obterPagamento("Boleto");
-        assertEquals("Boleto gerado com sucesso", servico.executar());
+        assertEquals("Boleto gerado com sucesso", pagamento.executar());
     }
 
     @Test
     void deveEstornarBoleto() {
         IPagamento pagamento = PagamentoFactory.obterPagamento("Boleto");
-        assertEquals("Pagamento via Boleto cancelado", servico.cancelar());
+        assertEquals("Pagamento via Boleto cancelado", pagamento.cancelar());
     }
 }
