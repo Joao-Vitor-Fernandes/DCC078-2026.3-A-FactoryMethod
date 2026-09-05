@@ -1,6 +1,6 @@
 package padroescriacao.factorymethod;
 
-public class PagamentoCarteiraDigital implements IPagamento {
+public class PagamentoCarteiraDigital {
 
     public String autorizar() {
         return "Pagamento via Carteira Digital autorizado";

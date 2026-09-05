@@ -19,7 +19,7 @@ public class PagamentoFactoryTest {
     @Test
     void deveRetornarExcecaoParaPagamentoInvalido() {
         try {
-            IPagamento pagamento = PagamentoFactory.obterPagamento("Cartao");
+            IPagamento pagamento = PagamentoFactory.obterPagamento("CarteiraDigital");
             fail();
         } catch (IllegalArgumentException e) {
             assertEquals("Pagamento inválido", e.getMessage());
